@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: pink;
+}
+
+.main-head{
+    height: 15vh;
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 3%;
+}
+
+.options{
+    background-color: black;
+    color: white;
+    padding: 5%;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.options:hover{
+    outline: 6px solid darkslategrey;
+}
+
+.h2{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 2%;
+}
+
+.computer{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.User{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.msg-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#msg{
+    padding: 2%;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.reset-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#reset{
+    padding: 1%;
+    background-color: darkslategrey;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#reset:hover{
+    transform: scale(1.2);
+    transition: 0.6s;
+}
