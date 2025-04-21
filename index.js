@@ -34,42 +34,42 @@ function ScoreDisplay(userWon) {
 function Gameplay(userChoice) {
     let compChoice = ComputerChoice();
     if (compChoice === userChoice) {
-        msg.innerText = "Game Drawn";
+        msg.innerText = "Game Drawn ( Play Next Move! )";
     }
     else {
         let userWon = true;
         if (userChoice === "rock") {
             if (compChoice === "paper") {
-                msg.innerText = `You lost: Computer Choice ${compChoice}`;
+                msg.innerText = `You lost : Computer Choice ${compChoice} ( Play Next Move! )`;
                 userWon = false;
                 ScoreDisplay(userWon);
             }
             else if (compChoice === "seassor") {
-                msg.innerText = `You Won: Computer Choice ${compChoice}`;
+                msg.innerText = `You Won : Computer Choice ${compChoice} ( Play Next Move! )`;
                 userWon = true;
                 ScoreDisplay(userWon);
             }
         }
         else if (userChoice === "paper") {
             if (compChoice === "rock") {
-                msg.innerText = `You Won: Computer Choice ${compChoice}`;
+                msg.innerText = `You Won : Computer Choice ${compChoice} ( Play Next Move! )`;
                 userWon = true;
                 ScoreDisplay(userWon);
             }
             else if (compChoice === "seassor") {
-                msg.innerText = `You Lost: Computer Choice ${compChoice}`;
+                msg.innerText = `You Lost : Computer Choice ${compChoice} ( Play Next Move! )`;
                 userWon = false;
                 ScoreDisplay(userWon);
             }
         }
         else if (userChoice === "seassor") {
             if (compChoice === "rock") {
-                msg.innerText = `You Lost: Computer Choice ${compChoice}`;
+                msg.innerText = `You Lost : Computer Choice ${compChoice} ( Play Next Move! )`;
                 userWon = false;
                 ScoreDisplay(userWon);
             }
             else if (compChoice === "paper") {
-                msg.innerText = `You Won: Computer Choice ${compChoice}`;
+                msg.innerText = `You Won : Computer Choice ${compChoice} ( Play Next Move! )`;
                 userWon = true;
                 ScoreDisplay(userWon);
             }
